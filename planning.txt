@@ -1,0 +1,28 @@
+Voting Application
+
+
+-----------------------------------------------------------------
+
+Routes
+
+User Authentication:
+  /signup: POST - Create a new user account
+  /login: POST - Log in to an existing account [aadhar no + password]
+  /resetpassword  POST -reset password to the user
+  /updatepassword POST - Update password To the user
+
+Voting;
+  /candidates: GET - Get the list of candidates.
+  /vote/:candidateId: POST - Vote for a specific candidate
+
+Vote Counts:
+  /vote/counts: GET - Get the list of candidate sorted of their vote counts.
+
+User Profile:
+  /profile: GET - Get user profile information
+ 
+
+Admin Candidate Management:
+  /candidates: POST - Create new Candidate
+  /candidates/:candidatesId: PUT - Update an existing candidate.
+  /candidates/:candidateId: DELETE - Delete a candidate from list        
